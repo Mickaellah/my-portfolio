@@ -90,8 +90,19 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: blue;
     font-size: 12px;
+}
+
+.home_page {
+    color: darkblue;
+}
+
+.link_to_home_page {
+    color: darkblue;
+    margin-inline-start: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .information {
