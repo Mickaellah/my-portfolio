@@ -1,8 +1,5 @@
 body {
     position: relative;
-    max-width: 1000px;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
     padding: 16px;
     background-color: #faeee7;
     margin: 0;
@@ -16,15 +13,16 @@ header {
     justify-content: space-between;
 }
 
-/* h1 {
-    font-size: 64px;
-}*/
 
 h1,
 h2 {
     text-transform: uppercase;
     margin: 0;
     color: #33272a;
+}
+
+h2 {
+    margin-block-start: 32px;
 }
 
 .mission {
@@ -41,13 +39,6 @@ h2 {
 .label_menu::before {
     content: url('./icon/icon_menu.svg');
 }
-
-/* .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 32px;
-    column-gap: 32px;
-} */
 
 img {
     width: 100%;
@@ -101,4 +92,63 @@ a {
     text-decoration: none;
     color: black;
     font-size: 12px;
+}
+
+.information {
+    margin: 16px;
+    padding: 16px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    body {
+        max-width: 1000px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        position: relative;
+        /* text-align: center; */
+    }
+
+    h1 {
+        font-size: 64px;
+        margin-block-start: 48px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 32px;
+        column-gap: 32px;
+    }
+
+    .label_menu::before {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-inline-start: 74vw;
+        margin-block-start: -16px;
+    }
+
+    .about_page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .information {
+        margin: 16px;
+        padding: 16px;
+        background-color: aliceblue;
+        border-radius: 5px;
+    }
 }
