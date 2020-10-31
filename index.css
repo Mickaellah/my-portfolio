@@ -1,4 +1,19 @@
+@font-face {
+    font-family: 'PT Serif';
+    src: url('./font/woff/PTSerif-Bold.woff') format('woff'),
+        url('./font/woff/PTSerif-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./font/woff/Poppins-Regular.woff') format('woff'),
+        url('./font/woff/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
 body {
+    font-family: 'Poppins';
     position: relative;
     padding: 16px;
     background-color: #faeee7;
@@ -8,6 +23,7 @@ body {
 }
 
 header {
+    font-family: 'PT Serif';
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,8 +37,14 @@ h2 {
     color: #33272a;
 }
 
+main {
+    margin-top: 64px;
+}
+
+
 h2 {
-    margin-block-start: 32px;
+    margin-block-start: 64px;
+    font-size: 40px;
 }
 
 .mission {
@@ -43,7 +65,7 @@ h2 {
 img {
     width: 100%;
     border-radius: 10px;
-    margin-top: 32px;
+    margin-top: -44px;
     box-shadow: 2px 2px 10px gray;
 }
 
@@ -90,12 +112,13 @@ li {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: white;
     font-size: 12px;
+    font-weight: 700;
 }
 
 .home_page {
-    color: darkblue;
+    color: black;
 }
 
 .link_to_home_page {
@@ -118,7 +141,6 @@ a {
         margin-inline-start: auto;
         margin-inline-end: auto;
         position: relative;
-        /* text-align: center; */
     }
 
     h1 {
